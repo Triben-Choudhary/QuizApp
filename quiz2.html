@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="box-wrapper">
+        <div class="boxtop">
+            <h1>Welcome</h1>    
+        </div>
+        <div class="st">
+            <div class="score">Score : <span>0</span></div>
+            <div class="timer">Time Left : &nbsp &nbsp <div class="beepwrapper"><div class="beep">10</div></div></div>
+        </div>
+        <div class="boxdown">
+            <h1 id="question">Question</h1>
+        <ul>
+            <li class="options" id="option1" onclick="active('1')">Option 1</li>
+            <li class="options" id="option2" onclick="active(2)">Option 2</li>
+            <li class="options" id="option3" onclick="active(3)">Option 3</li>
+            <li class="options" id="option4" onclick="active(4)">Option 4</li>
+        </ul>
+        <button class="btn" onclick="next()">Next</button>
+        </div>
+        <script src="quiz2.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Result</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="end">
+        <h1 class="naming">PLAYER</h1>
+        <h1 class="scoring">Your Score is : <span></span></h1>
+    </div>
+    <script>
+        let name = sessionStorage.getItem("name");
+        document.querySelector(".naming").innerHTML= name;
+        let score= sessionStorage.getItem("points");
+        document.querySelector(".scoring span").innerHTML= score;
+    </script>
+</body>
+</html>
